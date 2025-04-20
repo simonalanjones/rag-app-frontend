@@ -7,6 +7,7 @@ export default function App() {
   const [question, setQuestion] = useState("");
   const [loading, setLoading] = useState(false);
   const scrollRef = useRef(null);
+  const API_BASE = import.meta.env.VITE_API_URL || "http://localhost:8000";
 
   // Auto‑scroll on new message
   useEffect(() => {
@@ -20,7 +21,7 @@ export default function App() {
     setQuestion("");
 
     try {
-      const res = await fetch("http://localhost:8000/ask", {
+      const res = await fetch(`${API_BASE}/ask`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ question }),
