@@ -3,7 +3,15 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
 export default function App() {
-  const [messages, setMessages] = useState([]);
+  //const [messages, setMessages] = useState([]);
+
+  const [messages, setMessages] = useState([
+    {
+      role: "ai",
+      content: "Ask me anything like _what's in the welcome pack_",
+    },
+  ]);
+
   const [question, setQuestion] = useState("");
   const [loading, setLoading] = useState(false);
   const scrollRef = useRef(null);
