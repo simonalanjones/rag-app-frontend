@@ -9,7 +9,7 @@ export default function App() {
     {
       role: "ai",
       content:
-        "Welcome to Ask Villapedia. Ask me anything about your knowledge base, like _what's in the welcome pack?_",
+        "Welcome to Ask Villapedia. Ask me anything about your knowledge base, like _what's in the welcome pack?_ or _What restaurants are there in Kissimmee?_",
     },
   ]);
 
