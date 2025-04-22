@@ -8,8 +8,7 @@ export default function App() {
   const [messages, setMessages] = useState([
     {
       role: "ai",
-      content:
-        "Welcome to Ask Villapedia. Ask me anything about your knowledge base, like _what's in the welcome pack?_ or _What restaurants are there in Kissimmee?_",
+      content: "Ask me anything like _what's in the welcome pack?_",
     },
   ]);
 
